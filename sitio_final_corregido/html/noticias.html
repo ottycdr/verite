@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animado {
+  animation: aparecer 0.8s ease-out both;
+}
+</style>
+  <meta charset="UTF-8">
+  <title>Noticias - Cinema Verité</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  
+  
+  
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Cinema Verité</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartelera.html">Cartelera</a></li>
+          <li class="nav-item"><a class="nav-link" href="estrenos.html">Estrenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes.html">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <main class="container mt-4">
+    <h1>Últimas Noticias</h1><div class='row'><div class="col-md-4 mb-4 animado">
+  <div class="card h-100">
+    <img src="../img/dune.jpg" class="card-img-top" alt="Dune arrasa en taquilla">
+    <div class="card-body">
+      <h5 class="card-title">Dune arrasa en taquilla</h5>
+      <p class="card-text">Una obra destacada del cine contemporáneo que explora temas universales como el amor, el conflicto y la identidad. Con actuaciones memorables, una dirección impecable y una narrativa envolvente, esta película cautiva desde el primer minuto. Recomendada tanto para amantes del drama como del cine de autor.</p>
+    </div>
+  </div>
+</div><div class="col-md-4 mb-4 animado">
+  <div class="card h-100">
+    <img src="../img/joker2.jpg" class="card-img-top" alt="Lady Gaga como Harley Quinn">
+    <div class="card-body">
+      <h5 class="card-title">Lady Gaga como Harley Quinn</h5>
+      <p class="card-text">Una obra destacada del cine contemporáneo que explora temas universales como el amor, el conflicto y la identidad. Con actuaciones memorables, una dirección impecable y una narrativa envolvente, esta película cautiva desde el primer minuto. Recomendada tanto para amantes del drama como del cine de autor.</p>
+    </div>
+  </div>
+</div><div class="col-md-4 mb-4 animado">
+  <div class="card h-100">
+    <img src="../img/deadpool3.jpg" class="card-img-top" alt="Deadpool se une al MCU">
+    <div class="card-body">
+      <h5 class="card-title">Deadpool se une al MCU</h5>
+      <p class="card-text">Una obra destacada del cine contemporáneo que explora temas universales como el amor, el conflicto y la identidad. Con actuaciones memorables, una dirección impecable y una narrativa envolvente, esta película cautiva desde el primer minuto. Recomendada tanto para amantes del drama como del cine de autor.</p>
+    </div>
+  </div>
+</div></div>
+  </main>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>Síguenos en nuestras redes</p>
+    <div>
+      <a href="https://www.instagram.com" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.youtube.com" target="_blank" class="text-white"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="mt-2 mb-0">© 2025 Cinema Verité</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+<div id="whatsapp-fijo">
+  <a href="https://wa.me/5491112345678" target="_blank" title="Chateá con nosotros">
+    <img src="../img/whatsapp.png" alt="WhatsApp">
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("navbarNav");
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navbarCollapse.classList.contains("show")) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
