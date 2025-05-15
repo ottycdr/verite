@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es" lang="es" lang="es">
+<head>
+  <link rel="preload" as="image" href="img/deadpool3.jpg">
+  <link rel="preload" as="image" href="img/joker2.jpg">
+  <link rel="preload" as="image" href="img/dune2.jpg">
+  <meta charset="UTF-8">
+  <title>Cinema Verite - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorá las últimas películas, noticias y estrenos del mundo del cine en Cinema Verite.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cinema Verite - Inicio">
+  <meta property="og:description" content="Explorá las últimas películas, noticias y estrenos del mundo del cine en Cinema Verite.">
+  <meta property="og:image" content="img/dune.jpg">
+  <meta property="og:url" content="https://cinemaverite.com/index.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cinema Verite - Inicio">
+  <meta name="twitter:description" content="Explorá las últimas películas, noticias y estrenos del mundo del cine en Cinema Verite.">
+  <meta name="twitter:image" content="img/dune.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  
+  
+  
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Cinema Verité</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/cartelera.html">Cartelera</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/estrenos.html">Estrenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/quienes.html">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <main class="container mt-4">
+    
+<h1 class="text-center mb-4">Bienvenido a Cinema Verite</h1>
+<div id="carouselCineVerite" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="html/cartelera.html">
+        <img src="img/dune.jpg" class="d-block w-100" alt="Cartelera">
+        <div class="carousel-caption d-none d-md-block animado"><h5>Cartelera</h5></div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="html/noticias.html">
+        <img src="img/joker2.jpg" class="d-block w-100" alt="Noticias">
+        <div class="carousel-caption d-none d-md-block animado"><h5>Noticias</h5></div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="html/estrenos.html">
+        <img src="img/deadpool3.jpg" class="d-block w-100" alt="Estrenos">
+        <div class="carousel-caption d-none d-md-block animado"><h5>Próximos Estrenos</h5></div>
+      </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCineVerite" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselCineVerite" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </main>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>Síguenos en nuestras redes</p>
+    <div>
+      <a href="https://www.instagram.com" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.youtube.com" target="_blank" class="text-white"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="mt-2 mb-0">© 2025 Cinema Verité</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+<div id="whatsapp-fijo">
+  <a href="https://wa.me/5491112345678" target="_blank" title="Chateá con nosotros">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("navbarNav");
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navbarCollapse.classList.contains("show")) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

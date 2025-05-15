@@ -1,0 +1,75 @@
+
+// Variables
+$color-fondo-oscuro: #121212;
+$color-texto-claro: white;
+$color-hover-fondo: white;
+$color-hover-texto: black;
+$radio-borde: 5px;
+$tiempo-transicion: 0.3s;
+
+// Animación
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Mixin animación
+@mixin animacion-fade {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animado {
+  @include animacion-fade;
+}
+
+// Mixin botón fijo
+@mixin boton-fijo($bottom, $right, $size) {
+  position: fixed;
+  bottom: $bottom;
+  right: $right;
+  z-index: 100;
+  width: $size;
+  height: $size;
+}
+
+#whatsapp-fijo {
+  @include boton-fijo(120px, 20px, 60px);
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// Estilo modo oscuro
+body.dark-mode {
+  background-color: $color-fondo-oscuro;
+  color: $color-texto-claro;
+}
+
+// Hover navbar
+.navbar-dark {
+  .navbar-nav {
+    .nav-link:hover {
+      background-color: $color-hover-fondo;
+      color: $color-hover-texto !important;
+      border-radius: $radio-borde;
+      transition: all $tiempo-transicion ease;
+    }
+  }
+}
+
+// Transición de imagen al pasar el mouse
+.card-img-top {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
